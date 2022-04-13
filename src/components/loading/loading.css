@@ -1,0 +1,28 @@
+.loading{
+    position: fixed;
+    background-color: rgba(0,0,0,.3);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading > div{
+    width: 150px;
+    height: 150px;
+    border: 3px solid red;
+    border-bottom-color:transparent ;
+    border-radius: 100%;
+    animation: loading 1s infinite linear;
+}
+@keyframes loading {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
